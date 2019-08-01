@@ -1,0 +1,3 @@
+org/forgerock/http/servlet/example/BlockChainUtils.class
+org/forgerock/http/servlet/example/ExampleHttpFrameworkServletContextListener.class
+org/forgerock/http/servlet/example/ExampleHttpApplication.class
