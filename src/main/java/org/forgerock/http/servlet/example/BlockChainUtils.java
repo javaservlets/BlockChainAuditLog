@@ -24,7 +24,7 @@ public class BlockChainUtils {
         http_post = new HttpPost(server);
         try {
             http_post.setHeader("Authorization", "Basic " + this.key);
-            StringEntity body = new StringEntity("headers:\n  type: SendTransaction\nfrom: " + from + "\nto: " + to + "\nparams:\n  - value: " + value + "\n    type: uint256\ngas: 1000000\nmethodName: set");
+            StringEntity body = new StringEntity("headers:\n  type: SendTransaction\nfrom: " + from + "\nto: " + to + "\nparams:\n  - value: " + value + "\n    type: string\ngas: 1000000\nmethodName: set");
             http_post.setEntity(body);
 
             HttpClient httpclient = HttpClients.createDefault();
